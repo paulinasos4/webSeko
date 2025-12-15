@@ -6,7 +6,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     
-    // Animación del botón hamburguesa
     const spans = menuToggle.querySelectorAll('span');
     if (navMenu.classList.contains('active')) {
         spans[0].style.transform = 'rotate(45deg) translateY(8px)';
@@ -19,7 +18,7 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
-// Cerrar menú al hacer clic en un enlace
+// cierra el menu cuando apreta un enlace
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -30,7 +29,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Smooth scroll para enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -54,8 +52,6 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    // Aquí puedes agregar la lógica para enviar el formulario
-    // Por ejemplo, usando fetch para enviar a un servidor o servicio de email
     
     const formData = {
         nombre: document.getElementById('nombre').value,
@@ -63,24 +59,11 @@ contactForm.addEventListener('submit', (e) => {
         mensaje: document.getElementById('mensaje').value
     };
     
-    // Simulación de envío exitoso
+    // simulac de envio  
     alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
     contactForm.reset();
     
-    // En producción, aquí harías algo como:
-    // fetch('/api/contact', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(formData)
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //     alert('¡Mensaje enviado exitosamente!');
-    //     contactForm.reset();
-    // })
-    // .catch(error => {
-    //     alert('Error al enviar el mensaje. Por favor, intenta nuevamente.');
-    // });
+
 });
 
 // Efecto de scroll en el header
