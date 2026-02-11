@@ -105,48 +105,102 @@
             <h2 class="section-title">Nuestros Productos</h2>
             <p class="section-subtitle">Descubre nuestra variedad de frutas y verduras deshidratadas</p>
             
-            <div class="productos-grid">
-                <div class="producto-card">
-                    <div class="producto-image">
-                    <img src="assets/naranja.PNG" class="producto-img">
-                    </div>
-                    <h3 class="producto-title">Naranja Deshidratada</h3>
-                    <div class="producto-price">$220</div>
-                    <p class="producto-description">Rodajas de naranja para decorar tragos, acompañar aperitivos o dar un toque especial a tus preparaciones. </p>
-                    <button class="btn btn-cart">Agregar al Carrito</button>
-                </div>
-                
-                <div class="producto-card">
-                    <div class="producto-image">
-                    <img src="assets/lima.jpg" class="producto-img">
-                    </div>
-                    <h3 class="producto-title">Lima deshidratada, 260</h3>
-                    <div class="producto-price">$260</div>
-                    <p class="producto-description">Rodajas de lima con acidez fresca y aroma intenso. Perfectas para cócteles.</p>
-                    <button class="btn btn-cart">Agregar al Carrito</button>
-                </div>
-                
-                <div class="producto-card">
-                    <div class="producto-image">
-                    <img src="assets/pomelo.jpg" class="producto-img">
-                    </div>
-                    <h3 class="producto-title">Pomelo rosa deshidratado</h3>
-                    <div class="producto-price">$290</div>
-                    <p class="producto-description">Rodajas de pomelo rosa, suaves, aromáticas y súper decorativas.</p>
-                    <button class="btn btn-cart">Agregar al Carrito</button>
-                </div>
-                <div class="producto-card">
-                    <div class="producto-image">
-                    <img src="assets/limon.jpg" class="producto-img">
-                    </div>
-                    <h3 class="producto-title">Limon deshidratado</h3>
-                    <div class="producto-price">$260</div>
-                    <p class="producto-description">Rodajas de limón deshidratado, ideales para infusiones, cócteles y decoraciones.</p>
-                    <button class="btn btn-cart">Agregar al Carrito</button>
-                </div>               
-            </div>
-        </div>
-    </section>
+<div class="productos-grid">
+
+  <!-- NARANJA -->
+  <div class="producto-card">
+    <div class="producto-image">
+      <img src="assets/naranja.PNG" class="producto-img" alt="Naranja deshidratada">
+    </div>
+
+    <h3 class="producto-title">Naranja Deshidratada</h3>
+
+    <p class="producto-description">
+      Rodajas de naranja para decorar tragos y aperitivos.
+    </p>
+
+    <div class="producto-opciones">
+      <select class="opciones-select" id="opciones-naranja" data-price-target="#precio-naranja">
+        <option value="" disabled selected>Elegí una opción</option>
+        <option value="130">15 rodajas</option>
+        <option value="220">40 rodajas</option>
+      </select>
+    </div>
+
+
+  </div>
+
+
+  <!-- LIMA -->
+  <div class="producto-card">
+    <div class="producto-image">
+      <img src="assets/lima.jpg" class="producto-img" alt="Lima deshidratada">
+    </div>
+
+    <h3 class="producto-title">Lima deshidratada</h3>
+
+    <p class="producto-description">
+      Rodajas de lima con acidez fresca, perfectas para cócteles.
+    </p>
+
+    <div class="producto-opciones">
+      <select class="opciones-select" id="opciones-lima" data-price-target="#precio-lima">
+        <option value="" disabled selected>Elegí una opción</option>
+        <option value="130">15 rodajas</option>
+        <option value="220">40 rodajas</option>
+      </select>
+    </div>
+
+  </div>
+
+
+  <!-- POMELO -->
+  <div class="producto-card">
+    <div class="producto-image">
+      <img src="assets/pomelo.jpg" class="producto-img" alt="Pomelo rosa deshidratado">
+    </div>
+
+    <h3 class="producto-title">Pomelo rosa deshidratado</h3>
+
+    <p class="producto-description">
+      Rodajas suaves, aromáticas y súper decorativas.
+    </p>
+
+    <div class="producto-opciones">
+      <select class="opciones-select" id="opciones-pomelo" data-price-target="#precio-pomelo">
+        <option value="" disabled selected>Elegí una opción</option>
+        <option value="130">15 rodajas</option>
+        <option value="220">40 rodajas</option>
+      </select>
+    </div>
+
+  </div>
+
+
+  <!-- LIMÓN -->
+  <div class="producto-card">
+    <div class="producto-image">
+      <img src="assets/limon.jpg" class="producto-img" alt="Limón deshidratado">
+    </div>
+
+    <h3 class="producto-title">Limón deshidratado</h3>
+
+    <p class="producto-description">
+      Ideal para infusiones, cócteles y decoraciones.
+    </p>
+
+    <div class="producto-opciones">
+      <select class="opciones-select" id="opciones-limon" data-price-target="#precio-limon">
+        <option value="" disabled selected>Elegí una opción</option>
+        <option value="130">15 rodajas</option>
+        <option value="220">40 rodajas</option>
+      </select>
+    </div>
+
+  </div>
+
+</div>
+
 
     <!-- Sobre Nosotros Section -->
     <section id="nosotros" class="nosotros">

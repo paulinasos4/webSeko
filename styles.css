@@ -165,10 +165,10 @@ body {
   /* fondo con imagen + overlay para que se lea el texto */
   background-image:
     linear-gradient(
-      rgba(255, 248, 220, 0.65),
-      rgba(255, 248, 220, 0.65)
+      rgba(255, 248, 220, 0.284),
+      rgba(255, 248, 220, 0.187)
     ),
-    url("assets/fondo.jpg");
+    url("assets/video2fondo.MP4");
 
   background-size: cover;
   background-position: center;
@@ -873,7 +873,7 @@ html {
 
 .btn-whatsapp{
   margin-top: 14px;
-  background: #823720;       /* amarillo suave tipo ejemplo */
+  background: #25D366;       /* amarillo suave tipo ejemplo */
   color: #FFF8DC;            /* verde oscuro */
   border-radius: 999px;
   padding: 1rem 2.5rem;
@@ -889,4 +889,33 @@ html {
 .btn-whatsapp:hover{
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+}
+
+.producto-opciones{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.opciones-label{
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.opciones-select{
+  width: 100%;
+  padding: .9rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.opciones-select:focus{
+  outline: none;
+  border-color: var(--logo-bg);
 }

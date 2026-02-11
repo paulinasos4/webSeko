@@ -123,3 +123,20 @@ if (logoFooter) {
         this.style.display = 'none';
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const selects = document.querySelectorAll(".opciones-select");
+
+  selects.forEach(select => {
+    select.addEventListener("change", function () {
+      const precio = this.value;
+      const target = document.querySelector(this.dataset.priceTarget);
+
+      if (precio && target) {
+        target.textContent = "$" + precio;
+      }
+    });
+  });
+
+});
