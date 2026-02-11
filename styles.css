@@ -165,7 +165,7 @@ body {
   /* fondo con imagen + overlay para que se lea el texto */
   background-image:
     linear-gradient(
-      rgba(255, 248, 220, 0.284),
+      rgba(255, 248, 220, 0.491),
       rgba(255, 248, 220, 0.187)
     ),
     url("assets/video2fondo.MP4");

@@ -108,27 +108,26 @@
 <div class="productos-grid">
 
   <!-- NARANJA -->
-  <div class="producto-card">
-    <div class="producto-image">
-      <img src="assets/naranja.PNG" class="producto-img" alt="Naranja deshidratada">
-    </div>
-
-    <h3 class="producto-title">Naranja Deshidratada</h3>
-
-    <p class="producto-description">
-      Rodajas de naranja para decorar tragos y aperitivos.
-    </p>
-
-    <div class="producto-opciones">
-      <select class="opciones-select" id="opciones-naranja" data-price-target="#precio-naranja">
-        <option value="" disabled selected>Elegí una opción</option>
-        <option value="130">15 rodajas</option>
-        <option value="220">40 rodajas</option>
-      </select>
-    </div>
-
-
+<div class="producto-card">
+  <div class="producto-image">
+    <img src="assets/naranja.PNG" class="producto-img" alt="Naranja deshidratada">
   </div>
+
+  <h3 class="producto-title">Naranja Deshidratada</h3>
+  <p class="producto-description">Rodajas de naranja para decorar tragos y aperitivos.</p>
+
+  <div class="producto-opciones">
+    <label class="opciones-label" for="opciones-naranja">Opciones</label>
+
+    <select class="opciones-select" id="opciones-naranja" data-price-target="#precio-naranja">
+      <option value="" disabled selected>Elegí una opción</option>
+      <option value="130">15 rodajas</option>
+      <option value="220">40 rodajas</option>
+    </select>
+  </div>
+
+  <div class="producto-price" id="precio-naranja"></div>
+</div>
 
 
   <!-- LIMA -->
@@ -150,7 +149,7 @@
         <option value="220">40 rodajas</option>
       </select>
     </div>
-
+  <div class="producto-price" id="precio-lima"></div>
   </div>
 
 
@@ -173,7 +172,7 @@
         <option value="220">40 rodajas</option>
       </select>
     </div>
-
+<div class="producto-price" id="precio-pomelo"></div>
   </div>
 
 
@@ -196,7 +195,7 @@
         <option value="220">40 rodajas</option>
       </select>
     </div>
-
+<div class="producto-price" id="precio-limon"></div>
   </div>
 
 </div>
